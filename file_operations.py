@@ -15,7 +15,7 @@ class Dialogue(Base):
     episode_name = Column(String)
 
 
-# Connect to SQLite database (or your preferred DBMS)
+# Connect to SQLite database
 engine = create_engine('sqlite:///dialogues.db')
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
